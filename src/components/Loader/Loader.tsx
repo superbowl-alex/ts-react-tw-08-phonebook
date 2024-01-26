@@ -1,7 +1,7 @@
-import React from 'react';
+import { FC } from 'react';
 import PropagateLoader from 'react-spinners/PropagateLoader';
 
-const Loader = () => {
+const Loader: FC = () => {
   return (
     <div className='mx-auto w-full relative'>
       <PropagateLoader className='!absolute top-0 left-[50%] transform-[-50%]'

@@ -1,10 +1,11 @@
+import { FC } from 'react';
 import { useAuth } from '../../redux/hooks';
 import Navigation from './Navigation';
 import UserMenu from './UserMenu';
 import AuthNav from './AuthNav';
 import { MdContactPhone } from "react-icons/md";
 
-const Header = () => {
+const Header: FC = () => {
   const { isLoggedIn } = useAuth();
 
   return (
