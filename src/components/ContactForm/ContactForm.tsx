@@ -12,7 +12,7 @@ interface IFormError {
   name: string;
 }
 
-let schema = yup.object().shape({
+const schema = yup.object().shape({
   name: yup
     .string()
     .label('Enter contact name')
